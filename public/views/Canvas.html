@@ -8,27 +8,36 @@
     <style type="text/css">
         .navbar {
             overflow: hidden;
-            background-image:none;
+            background-image: none;
             background-color: black;
             font-family: Helvetica, Arial, sans-serif;
         }
-        #logo{height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;}
-    #help{height: auto; 
-    width: auto; 
-    max-width: 20px; 
-    max-height: 20px;}
+
+        #logo {
+            height: auto;
+            width: auto;
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        #help {
+            height: auto;
+            width: auto;
+            max-width: 20px;
+            max-height: 20px;
+        }
+
         body {
             background-image: url("../paper.jpg");
             background-color: #cccccc;
             background-size: 100%;
         }
-        canvas{
+
+        canvas {
             background-color: white;
-            background-image:none;
+            background-image: none;
         }
+
         .dropdown {
             float: right;
             overflow: hidden;
@@ -48,7 +57,7 @@
         .navbar a:hover,
         .dropdown:hover .dropbtn {
             background-color: grey;
-            background-image:none;
+            background-image: none;
         }
 
         .dropdown-content {
@@ -101,9 +110,9 @@
  -->
 
 
-            <h1>
-                <center><img id="logo" src="../logo3.png"></img></center>
-            </h1>
+    <h1>
+        <center><img id="logo" src="../logo3.png"></center>
+    </h1>
 
 
 
@@ -113,27 +122,27 @@
     <input id="logout" type="button" value="Log Out"><br><br>
 -->
     <div id="top">
-    <center>
-    <form id="formData" action="/fileupload" enctype="multipart/form-data" method="post">
-        <input type="file" title="Do this thing" name="imageName" id="filetoupload" multiple>
-        <p style="display:inline"><b>X</b></p>
-        <input type="number" name="xCordinate" id="xCordinateID" value="0">
-        <p style="display:inline"><b>Y</b></p>
-        <input type="number" name="yCordinate" id="yCordinateID" value="0">
-        <input type="submit" value="Upload">
-        <img id="help" title="Choose the same file again to move it to a new location!" src="../help.png"></img>
-    </form>
-    </center>
-    <!-- 
+        <center>
+            <form id="formData" action="/fileupload" enctype="multipart/form-data" method="post">
+                <input type="file" title="Do this thing" name="imageName" id="filetoupload" multiple>
+                <p style="display:inline"><b>X</b></p>
+                <input type="number" name="xCordinate" id="xCordinateID" value="0">
+                <p style="display:inline"><b>Y</b></p>
+                <input type="number" name="yCordinate" id="yCordinateID" value="0">
+                <input type="submit" value="Upload">
+                <img id="help" title="Choose the same file again to move it to a new location!" src="../help.png">
+            </form>
+        </center>
+        <!-- 
     <input id="uploadbutton" type="file" value="Upload"><br><br>
     <input id="sendtocanavs" type="button" value="Uploadcanavsdata"><br><br>
     -->
-    
+
     </div>
     <center>
         <canvas id="Maincanvas" width="1400" height="750" style="border:1px solid #d3d3d3;"></canvas>
     </center>
-    
+
     <script src="js/canvas.js"></script>
 
 
