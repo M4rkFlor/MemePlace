@@ -2,6 +2,9 @@
     "name": "imageproject",
     "version": "1.0.0",
     "description": "imageplace",
+    "engines": {
+        "node": "8.11.1"
+    },
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
