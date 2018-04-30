@@ -116,7 +116,7 @@ myDatabase.prototype.deleteObjectWithUsername = function (_thename) {
     for (let i = 0; i < infoList.length; i++) {
         if (infoList[i] && _thename == infoList[i].username) {
             let tempy = infoList[i];
-            picList.splice(i, 1);
+            infoList.splice(i, 1);
             writeToDB(infoList);
             return tempy;
         }
